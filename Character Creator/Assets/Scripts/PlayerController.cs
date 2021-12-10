@@ -7,13 +7,10 @@ public class PlayerController : MonoBehaviour
 
     public SpriteRenderer ArmorRenderer;
     public SpriteRenderer WeaponRenderer;
-    public UnityEngine.UI.Button WeaponShopButton;
-    public UnityEngine.UI.Button ArmorShopButton;
+    
 
     public void SetArmor(Sprite newSprite)
     {
-        this.WeaponShopButton.SetActive(false);
-        this.ArmorShopButton.SetActive(true);
         ArmorRenderer.sprite = newSprite;
 
     }
@@ -21,8 +18,6 @@ public class PlayerController : MonoBehaviour
 
     public void SetWeapon(Sprite newSprite)
     {
-        this.WeaponShopButton.SetActive(true);
-        this.ArmorShopButton.SetActive(false);
         WeaponRenderer.sprite = newSprite;
     }
 
